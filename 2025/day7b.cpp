@@ -70,6 +70,7 @@ uint64_t processFile(const std::string& filename) {
         i++;
     }
     sizei = i;
+    f.close();
 
     // casting the first beam and counting
     uint64_t total = countTimes(isSplitter, nbPossibilities, sizei, sizej, starti, startj);

@@ -94,6 +94,7 @@ uint64_t processFile(const std::string& filename) {
         i++;
     }
     sizei = i - 1;
+    f.close();
 
     // casting the first beam and counting
     int total = countBeams(isSplitter, sizei, sizej, starti, startj);
